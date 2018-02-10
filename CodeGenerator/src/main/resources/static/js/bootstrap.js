@@ -1,0 +1,1 @@
+window.PM.loadResource(['router', 'common', 'index']);
