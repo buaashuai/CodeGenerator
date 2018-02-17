@@ -17,6 +17,7 @@
 </style>
 <script>
   import utils from '@/common/utils'
+  import codeUrl from '@/common/code_url'
 
   export default {
     name: 'app',
@@ -41,12 +42,12 @@
         if (tableNames == null) {
           return;
         }
-        location.href = "http://192.168.2.248:8081/sys/generator/code?tables=" + JSON.stringify(tableNames);
+        location.href = codeUrl.getUrl(codeUrl.ResourceMap.code) + "?tables=" + JSON.stringify(tableNames);
       },
       initTable: function () {
         // console.log('!!!!!!!!');
         $("#jqGrid").jqGrid({
-          url: 'http://192.168.2.248:8081/sys/generator/list',
+          url: codeUrl.getUrl(codeUrl.ResourceMap.generator),
           datatype: "json",
           colModel: [
             {label: '表名', name: 'tableName', width: 100, key: true},
