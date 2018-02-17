@@ -1,10 +1,5 @@
 **项目说明** 
 - CodeGenerator可在线生成entity、xml、dao、service、html、js、sql代码
 <br> 
-
- **本地部署**
-- 通过git下载源码
-- 修改application.yml，更新MySQL账号和密码、数据库名称
-- Eclipse、IDEA运行CodeApplication.java，则可启动项目
-- 项目访问路径：http://localhost
+CodeGenerator 项目实现了前后端分离，其中 CodeGenerator 是 Java 写的后台项目，CodeGeneratorWeb 是前端项目，前后端项目的详细说明参见这两个项目中的 README.md 文件
 
